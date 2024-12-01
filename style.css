@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0a090a);
+}
+
+.heart {
+  height: 270px;
+  width: 270px;
+  background: #0a0a0a;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 120px rgba(230, 10, 10, 0.966);
+  animation: heart 0.6s linear infinite;
+}
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  height: 270px;
+  width: 270px;
+  background: #000000;
+  border-radius: 150px;
+}
+
+.heart:before {
+  top: -50%;
+}
+
+.heart:after {
+  right: -50%;
+}
+
+.calculator {
+  position: absolute;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  border-left: 50px;
+}
+
+input {
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: transparent;
+  box-shadow: 0px 5px 20px rgba(216, 4, 4, 0.952);
+  margin: 20px;
+  width: 78%;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: right;
+  color: white;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 15px;
+  text-align: right;
+}
+
+button {
+  padding: 7px 20px;
+  /* padding-right: 14px; */
+  width: 20%;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  margin: 4px;
+  box-shadow: 0px 2px 10px rgba(210, 11, 11, 0.815);
+  font-size: 10px;
+}
+
+.div1 {
+  width: 110%;
+  padding-bottom: 5px;
+  padding-right: 50px;
+}
+
+.div2 {
+  width: 150%;
+  padding-bottom: 5px;
+  padding-right: 100px;
+  padding-left: 10px;
+  margin-right: 2px;
+  margin-left: 1px;
+}
+
+.div3 {
+  width: 90%;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+.div4 {
+  width: 150%;
+  padding-right: 30px;
+  padding-left: 74px;
+  padding-bottom: 5px;
+}
+
+.div5 {
+  width: 88%;
+  padding-top: 1px;
+  padding-right: 150px;
+  margin-left: 24%;
+  padding-bottom: 5px;
+}
+
+.m1 {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.div6 {
+  width: 55%;
+  padding-top: 1px;
+  /* padding-right: 100px; */
+  margin-left: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equalbtn {
+  text-align: center;
+  background-color: rgb(231, 86, 86);
+}
+
+.operator {
+  color: rgb(210, 108, 108);
+}
